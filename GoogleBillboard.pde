@@ -2,11 +2,13 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 public void setup()  
 {            
     noLoop();  
-    for (int i = 0; i < e.length; i++){
+    for (int i = 2; i < e.length()-10; i++){
     String digits = e.substring (i, i+10);
     double num = Double.parseDouble(digits);
-    if ()
-    System.out.println(num);
+    if (isPrime(num) == true){
+    	System.out.println(num);
+		break;
+		}
  	}
 }  
 public void draw()  
